@@ -37,8 +37,12 @@ const API = {
   },
   Tables: {
     product: {
-      collums:
+      columns:
         '_id:objectID, name [string], description[string], pricing[number], url_image[string]',
+    },
+    comment: {
+      columns:
+        '_id:objectID, name [string], description[string], rating[number], recommend[boolean]',
     },
   },
 };
