@@ -8,7 +8,7 @@ const API = {
   EndPoint: 'https://jupiter-backend.herokuapp.com/',
   Routes: {
     GET: {
-      '/healthcheck': 'Route para verificar o estado da API',
+      '/healthcheck': 'Route para verificar o estado da API @@@@@',
       '/product': 'Route para listar os produtos cadastrados',
       '/product/:id/comment':
         'Route para listar os dados e os comentários do produto passado no params (:id)',
