@@ -35,5 +35,10 @@ const API = {
     '/product?tags=':
       "Usada para fltrar por produtos que possem a tag informada. Ex: /product?tags='hamburguer'",
   },
+  Tables: {
+    product: {
+      collums: 'id, name, description',
+    },
+  },
 };
 export { API };
