@@ -37,7 +37,8 @@ const API = {
   },
   Tables: {
     product: {
-      collums: 'id, name, description',
+      collums:
+        '_id:objectID, name [string], description[string], pricing[number], url_image[string]',
     },
   },
 };
