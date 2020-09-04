@@ -2,11 +2,11 @@
   "name": "jupiter",
   "version": "1.0.0",
   "main": "server.ts",
-  "repository": "https://github.com/wendelpaco/jupiter.git",
+  "repository": "https://github.com/wendelpaco/jupiter-backend.git",
   "author": "wendel paco",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --inspect --transpile-only --respawn --ignore-watch node_modules -r tsconfig-paths/register src/server.ts",
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules -r tsconfig-paths/register src/server.ts",
     "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist",
     "start": "node ./dist/server.js"
   },

@@ -1,4 +1,4 @@
-import { Request, Response, query } from 'express';
+import { Request, Response } from 'express';
 import ProductModel, { IProductModel } from '@App/model/Product/ProductModel';
 
 class ProductContoller {
@@ -22,9 +22,10 @@ class ProductContoller {
   }
   public async Read(req: Request, res: Response): Promise<Response> {
     try {
-      const { tags } = req.query;
+      const { tags } = req.headers;
+
       if (tags) {
-        const product = await ProductModel.find().where({ tags });
+        const product = await ProductModel.find({ tags });
         return res.status(200).json({ product });
       }
       const product = await ProductModel.find();

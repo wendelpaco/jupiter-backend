@@ -1,7 +1,7 @@
 const API = {
   JupiterAPI: {
     Version: '1.0.1',
-    Repository: 'https://github.com/wendelpaco/jupiter.git',
+    Repository: 'https://github.com/wendelpaco/jupiter-backend.git',
     Author: 'Wendel Paco',
   },
 
